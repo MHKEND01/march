@@ -3,9 +3,9 @@
   <script src="//d3js.org/d3.v5.min.js" charset="utf-8"></script>
 </head>
   <body>
-    <svg id="1"></svg>
+    <!-- <svg id="1"></svg>
     <svg id="2"></svg>
-    <svg id="3"></svg>
+    <svg id="3"></svg> -->
 <script>
 var gradesP = d3.json("gradeData.json");
 
@@ -35,7 +35,7 @@ var drawGraph = function(data, widthInput,heightInput, idNum)
   };
 
   var svg = d3.select("body")
-              .selectAll("svg")
+              .append("svg")
               .attr("width",screen.width)
               .attr("height", screen.height)
   var margins =
